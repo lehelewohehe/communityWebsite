@@ -1,0 +1,26 @@
+{{ extend './_layouts/main.html' }}
+{{ block 'head' }}
+<link rel="stylesheet" type="text/css" href="/public/css/list.css">
+<link rel="stylesheet" type="text/css" href="/public/css/siderbar.css">
+<link type="text/css" rel="stylesheet" href="/node_modules/simple-pagination/simplePagination.css" />
+{{ /block }}
+{{ block 'body' }}
+{{ include './_partials/body_left_list.html' }}
+{{ include './_partials/body_right.html' }}
+{{ /block }}
+{{ block 'script' }}
+<script type="text/javascript" src="/node_modules/simple-pagination/jquery.simplePagination.js"></script>
+<script type="text/javascript">
+//将分页插件封装成一个函数
+$(function() {
+    $('#pagination-demo').pagination({
+        hrefTextPrefix: '/?id={{ id }}&page=',
+        items: {{ num }},
+		displayedPages: 7,
+        currentPage: {{ page }},
+        cssStyle: 'light-theme'    
+    })
+})
+
+</script>
+{{ /block }}

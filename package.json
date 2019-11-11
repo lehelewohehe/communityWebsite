@@ -1,0 +1,28 @@
+{
+  "name": "znode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "blueimp-md5": "^2.12.0",
+    "bootstrap": "^3.3.7",
+    "express": "^4.17.1",
+    "express-art-template": "^1.0.1",
+    "express-session": "^1.17.0",
+    "html5shiv": "^3.7.3",
+    "jquery": "^3.4.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.17.1",
+    "simple-pagination.js": "^1.6.0",
+    "twbs-pagination": "^1.4.1",
+    "ueditor-backend": "^1.0.15",
+    "wangeditor": "^3.1.1"
+  }
+}

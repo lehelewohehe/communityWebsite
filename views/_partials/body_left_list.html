@@ -1,0 +1,37 @@
+<div class="znode_main_list col-lg-9 col-md-12 col-sm-12 col-xs-12">
+    <div class="content">
+        <div class="list_head">
+            <a href="/" class="current_head">全部</a>
+            <a href="/">精华</a>
+            <a href="/?id=1">分享</a>
+            <a href="/?id=2">问答</a>
+            <a href="/?id=3">招聘</a>
+            <a href="/?id=4">客户端测试</a>
+        </div>
+        {{ each result }}
+        <div class="list_body">
+            <img class="pull-left" src="{{ $value.avatar }}" alt="">
+            <span class="total pull-left"><span title="回复数" class="comment_number">{{ $value.comment_number }}</span>/<span title="评论数" class="click_number">{{ $value.browse_number }}</span>
+            </span>
+            <!-- hidden-xs hidden-sm hidden-md -->
+            <span class="my_label pull-left label_best">
+            {{ if $value.post_type === 1 }}    
+            分享
+            {{ else if $value.post_type === 2 }}
+            问答
+            {{ else if $value.post_type === 3 }}
+            招聘
+            {{ else if $value.post_type === 4 }}
+            测试
+            {{ /if }}
+            </span>
+            <span class="title"><a href="/article?id={{ $value.post_id }}">{{ $value.post_title }}</a></span>
+            <span class="how_long_ago pull-right">{{ $value.create_time }}</span>
+        </div>
+        {{ /each }}
+    </div>
+    <nav aria-label="Page navigation">
+        <ul class="pagination" id="pagination-demo">
+        </ul>
+    </nav>
+</div>

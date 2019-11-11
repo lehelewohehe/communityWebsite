@@ -1,0 +1,11 @@
+.znode_main .znode_main_api .content {
+	padding: 20px;
+	background-color: #fff;
+	border-top: 1px solid #fff;
+}
+.znode_main .znode_main_api .list-group {
+	margin: -21px -20px 0px;
+}
+.znode_main .znode_main_api .content > p {
+	padding: 20px 0px;
+}

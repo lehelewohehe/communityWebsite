@@ -1,0 +1,60 @@
+}
+.znode_main {
+}
+.znode_main .znode_main_right .siderbar_personinfo img {
+    width: 45px;
+}
+.znode_main .znode_main_right .content>* {
+    min-height: 50px;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+
+.znode_main .znode_main_right .siderbar_issuetopic {
+    padding: 10px;
+}
+
+.znode_main .znode_main_right .siderbar_login {
+    padding: 10px;
+}
+
+.znode_main .znode_main_right .siderbar_login p a {
+    color: #ccc;
+}
+.znode_main .znode_main_right  a {
+    color: #555;
+}
+
+.znode_main .znode_main_right .siderbar_noresponse a {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.znode_main .znode_main_right .siderbar_top,
+.znode_main .znode_main_right .siderbar_top a {
+    font-size: 12px;
+    color: #555;
+}
+
+.znode_main .znode_main_right .siderbar_community img {
+    width: 150px;
+}
+.znode_main .znode_main_right .siderbar_qrcode img {
+    width: 200px;
+}
+.znode_main .znode_main_right .siderbar_banner img {
+    width: 100%;
+}
+.znode_main_right {
+    /*background-color: #fff;*/
+   /* margin-left: -15px;*/
+}
+.znode_main .znode_main_right  li,
+.znode_main .znode_main_right  a,
+.znode_main .znode_main_right  table * {
+    border: none;
+}
+.znode_main .znode_main_right .media {
+    padding: 5px;
+}

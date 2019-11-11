@@ -1,0 +1,29 @@
+<div class="znode_main_login col-lg-9 col-md-12 col-sm-12 col-xs-12">
+    <div class="content">
+        <ul class="list-group">
+            <li class="list-group-item bg-success"><a href="/index">主页</a>/ Node.js 新手入门</li>
+        </ul>
+        <form class="form-horizontal" action="/login" method="post">
+            {{ if err_message }}
+            <div class="alert alert-warning" role="alert">{{ err_message }}</div>
+            {{ /if }}
+            <div class="form-group">
+                <label for="inputEmail3" class="col-xs-1 col-xs-offset-2 control-label">用户名</label>
+                <div class="col-xs-6 col-sm-4 col-xs-offset-1">
+                    <input type="email" class="form-control" name="email" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group text-center">
+                <label for="inputPassword3" class="col-xs-1 col-xs-offset-2 control-label">密码</label>
+                <div class="col-xs-6 col-sm-4 col-xs-offset-1">
+                    <input type="password" class="form-control" name="password" id="inputPassword3" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-offset-4 col-xs-10">
+                    <button type="submit" class="btn btn-default">登入</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

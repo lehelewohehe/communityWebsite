@@ -1,0 +1,243 @@
+/*--------------基础样式-------------*/
+body {
+    background-color: #e1e1e1;
+    padding: 0;
+    margin: 0;
+}
+
+a,
+a:hover {
+    /*text-decoration: none;*/
+}
+
+/*a:hover {
+    color: #80bd01;
+}*/
+
+li {
+    list-style: none;
+}
+
+/*去除图片的缝隙*/
+image {
+    vertical-align: middle;
+}
+
+.container,
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.bg-success {
+    background-color: #dff0d8!important;
+}
+
+.znode_main .znode_main_article,
+.znode_main .znode_main_list,
+.znode_main .znode_main_novice,
+.znode_main .znode_main_login,
+.znode_main .znode_main_register,
+.znode_main .znode_main_api,
+.znode_main .znode_main_about,
+.znode_main .znode_main_topiccreate,
+.znode_main .znode_main_set {
+    padding-right: 15px;
+}
+
+@media (max-width: 980px) {
+    .znode_main .list_body * {
+        font-size: 12px !important;
+    }
+
+    .znode_main .list_body .title {
+        max-width: 60%;
+        font-size: 14px !important;
+    }
+
+    .znode_main .list_body .total {
+        position: absolute;
+        left: 77px;
+        bottom: -5px;
+    }
+
+    .znode_main .list_body .how_long_ago {
+        position: absolute;
+        right: 5px;
+        bottom: -5px;
+    }
+
+    .znode_main .znode_main_article,
+    .znode_main .znode_main_list,
+    .znode_main .znode_main_novice,
+    .znode_main .znode_main_login,
+    .znode_main .znode_main_register,
+    .znode_main .znode_main_api,
+    .znode_main .znode_main_about,
+    .znode_main .znode_main_topiccreate,
+    .znode_main .znode_main_set {
+        padding-right: 0px;
+    }
+}
+/*----------------公共样式-------------*/
+
+/*头部*/
+.znode_top .navbar {
+    background-color: #444;
+}
+
+.znode_top .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 0px 15px;
+    padding-top: 8px;
+    line-height: 28px;
+}
+
+.znode_top .navbar img {
+    width: 120px;
+    height: 28px;
+}
+
+.znode_top .link_nav li a {
+    float: left;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 10px;
+    color: #ccc;
+    box-sizing: border-box;
+}
+
+.znode_top .link_nav li a:hover {
+    color: #fff;
+}
+
+.znode_top .navbar-form {
+    margin: 0;
+    padding: 12px;
+    border: 0px;
+    box-shadow: none;
+}
+
+.znode_top .navbar-form .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+.znode_top .form-control {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 26px;
+    padding: 3px 12px;
+    font-size: 14px;
+    /*line-height: 1.42857143;*/
+    line-height: 38px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.znode_top .znode_top_right {
+    line-height: 50px;
+}
+
+@media (max-width: 400px) {
+    .znode_top .znode_top_left {
+        text-align: center;
+    }
+
+    .znode_top .navbar img {
+        width: 120px;
+        height: 28px;
+        display: inline-block;
+    }
+
+    .znode_top .navbar-brand {
+        float: none;
+    }
+}
+
+/*尾部*/
+.znode_footer p img:nth-child(1) {
+    width: 92px;
+    height: 18px;
+}
+
+.znode_footer p:first-child a {
+    color: #777;
+}
+
+.znode_footer p img:nth-child(2) {
+    width: 115px;
+    height: 43px;
+}
+
+.znode_footer p img:nth-child(3) {
+    width: 166px;
+    height: 54px;
+}
+
+.znode_footer {
+    background-color: #fff;
+    color: #ababab;
+    padding: 10px 0px;
+    margin-top: 10px;
+}

@@ -1,0 +1,25 @@
+.znode_main .znode_main_set li {
+    border: none;
+    margin: 0px -100px;
+}
+.znode_main .znode_main_set .updata_password li,
+.znode_main .znode_main_set .updata_info li {
+	margin-top: -100px;
+}
+.znode_main .znode_main_set .updata_info,
+.znode_main .znode_main_set .updata_password,
+.znode_main .znode_main_set .updata_img {
+    background-color: #fff;
+    padding: 0px 100px 100px; 
+    min-height: 300px;
+}
+.znode_main .znode_main_set .updata_password,
+.znode_main .znode_main_set .updata_info {
+	margin-top: 20px;
+	padding: 100px;
+}
+.znode_main .znode_main_set .updata_img .form-group img {
+	cursor: pointer;
+	width: 140px;
+	height: 140px;
+}

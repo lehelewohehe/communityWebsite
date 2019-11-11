@@ -1,0 +1,14 @@
+.bg-success {
+    background-color: #dff0d8!important;
+}
+.znode_main .znode_main_login li {
+    border: none;
+}
+.znode_main .znode_main_login .content {
+    background-color: #fff;
+/*    padding: 10px; */
+}
+.znode_main .znode_main_login .content .form-horizontal {
+	margin: 50px 0px;
+	min-height: 240px;
+}

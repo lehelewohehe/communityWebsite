@@ -1,0 +1,15 @@
+{{  extend './_layouts/main.html' }}
+{{ block 'head' }}
+<link rel="stylesheet" type="text/css" href="/public/css/set.css">
+<link rel="stylesheet" type="text/css" href="/public/css/siderbar.css">
+{{ /block }}
+{{ block 'body' }}
+{{  include './_partials/body_left_set.html' }}
+{{  include './_partials/body_right.html' }}
+{{ /block }}
+{{ block 'script' }}
+<script src="/public/js/register.js"></script>
+<script src="/public/js/set.js"></script>
+{{ /block }}
+
+

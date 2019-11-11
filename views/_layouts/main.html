@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 移动端视口相关配置 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/base.css">
+	{{  block 'head' }}{{/block}}
+</head>
+<body>
+{{ include '../_partials/header.html' }}
+<div class="znode_main clearfix">
+    <div class="container">
+        {{  block 'body' }}{{/block}}
+    </div>
+</div>
+{{ include '../_partials/footer.html' }}
+<script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+{{  block 'script' }}{{/block}}
+</body>
+</html>

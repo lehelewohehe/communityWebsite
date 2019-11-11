@@ -1,0 +1,15 @@
+{{ extend './_layouts/main.html' }}
+{{ block 'head' }}
+<link rel="stylesheet" type="text/css" href="/public/css/article.css">
+<link rel="stylesheet" type="text/css" href="/public/css/siderbar.css">
+{{ /block }}
+{{ block 'body' }}
+{{ include './_partials/body_left_article.html' }}
+{{ include './_partials/body_right.html' }}
+{{ /block }}
+{{ if session }}
+{{ block 'script' }}
+<script type="text/javascript" src="/node_modules/wangeditor/release/wangEditor.min.js"></script>
+<script type="text/javascript" src="/public/js/article.js"></script>
+{{ /block }}
+{{ /if }}

@@ -1,0 +1,19 @@
+.znode_main .znode_main_loginsiderbar  li,
+.znode_main .znode_main_loginsiderbar  a,
+.znode_main .znode_main_loginsiderbar  table * {
+    border: none;
+    color: #000;
+}
+.znode_main .znode_main_loginsiderbar .list-group {
+	background-color: #fff;
+	box-sizing: content-box;
+	padding-bottom: 20px;
+}
+.znode_main .znode_main_loginsiderbar .item {
+	height: 30px;
+	padding-left: 20px;
+	line-height: 30px;
+}
+.znode_main .znode_main_loginsiderbar p {
+	padding-left: 10px;
+}

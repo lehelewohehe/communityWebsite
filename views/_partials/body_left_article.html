@@ -1,0 +1,47 @@
+<div class="znode_main_article col-lg-9 col-md-12 col-sm-12 col-xs-12">
+    <div class="content">
+        <div class="article_head">
+            <h1>{{ post_result.post_title }}</h1>
+            <p><span class="timed">发布于{{ post_result.create_time }}</span><span class="author">作者<a href="#">{{ post_result.user_name }}</a></span><span class="watched">{{ post_result.browse_number }}次浏览</span><span>来自
+                    {{ if post_result.post_type === 1 }}
+                    分享
+                    {{ else if post_result.post_type === 2 }}
+                    问答
+                    {{ else if post_result.post_type === 3 }}
+                    招聘
+                    {{ else if post_result.post_type === 4 }}
+                    测试
+                    {{ /if }}
+                </span></p>
+        </div>
+        <div class="article_body">{{@post_result.post_content}}</div>
+        <div class="interval">
+            {{ post_result.comment_number }}回复
+        </div>
+        {{ each comment_result }}
+        <div class="article_comments">
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="{{ $value.avatar }}" alt="">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <p class="media-heading"><a href="#" class="comments_author">{{ $value.user_name }}&nbsp&nbsp</a><a href="#">{{ $index+1 }}楼•{{ $value.create_time }}</a></p>
+                    <p class="comments_content">{{@$value.comment_content}}</p>
+                </div>
+            </div>
+        </div>
+        {{ /each }}
+        {{ if session }}
+        <div class="space_interval">
+            发表评论
+        </div>
+        <div id="editor">
+            <p>欢迎使用 <b>wangEditor</b> 富文本编辑器</p>
+        </div>
+        <button id="btn1" data-id="{{post_result.post_id}}">以html发表</button>
+        <button id="btn2">以text发表</button>
+        {{ /if }}
+    </div>
+</div>

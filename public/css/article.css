@@ -1,0 +1,53 @@
+.znode_main .znode_main_article .content {
+	background-color: #fff;
+}
+.znode_main .article_head {
+    /*background-color: pink;*/
+    border-top: 1px solid #fff;
+    padding: 0px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.znode_main .article_head span::before {
+    content: ".";
+    display: inline-block;
+    height: 4px;
+    width: 4px;
+    border-radius: 2px;
+    background-color: #000;
+    line-height: 2px;
+    margin: 0px 5px;
+}
+
+.znode_main .article_head a {
+    color: #333;
+}
+
+.znode_main .article_head h1 {
+    font-size: 20px;
+}
+
+.znode_main .article_body {
+    /*background-color: red;*/
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.znode_main .article_comments {
+    /*height: 100px;*/
+    /*background-color: hotpink;*/
+    padding: 10px;
+}
+
+.znode_main .article_comments img {
+    width: 30px;
+}
+.znode_main .article_comments .comments_author {
+	color: #666;
+}
+
+.znode_main .interval,
+.znode_main .space_interval {
+    padding: 10px;
+    background-color: #e1e1e1;
+}

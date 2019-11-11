@@ -1,0 +1,13 @@
+{{  extend './_layouts/main.html' }}
+{{ block 'head' }}
+<link rel="stylesheet" type="text/css" href="/public/css/loginsiderbar.css">
+<link rel="stylesheet" type="text/css" href="/public/css/topiccreate.css">
+{{ /block }}
+{{ block 'body' }}
+{{  include './_partials/body_left_topiccreate.html' }}
+{{  include './_partials/body_right_login.html' }}
+{{ /block }}
+{{ block 'script' }}
+<script type="text/javascript" src="/node_modules/wangeditor/release/wangEditor.min.js"></script>
+<script type="text/javascript" src="/public/js/topiccreate.js"></script>
+{{ /block }}

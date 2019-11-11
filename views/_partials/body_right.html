@@ -1,0 +1,132 @@
+<div class="znode_main_right col-lg-3 hidden-xs hidden-sm hidden-md">
+    <div class="content">
+        {{ if load_siderbar.personinfo }}
+        <div class="siderbar_personinfo">
+            <ul class="list-group">
+                {{ if post_result }}
+                <li class="list-group-item bg-success">作者信息</li>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="{{ post_result.avatar }}" alt="">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <p class="media-heading"><a href="#" class="nickname">{{ post_result.user_name }}</a></p>
+                        <p class="self_introduction.">{{ post_result.personalize }}</p>
+                    </div>
+                </div>
+                {{ else }}
+                <li class="list-group-item bg-success">个人信息</li>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="{{ session.avatar }}" alt="">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <p class="media-heading"><a href="#" class="nickname">{{ session.user_name }}</a></p>
+                        <p class="self_introduction.">{{ session.personalize }}</p>
+                    </div>
+                </div>
+                {{ /if }}
+            </ul>
+        </div>
+        {{ /if }}
+        {{ if load_siderbar.login }}
+        <div class="siderbar_login">
+            <p>CNode：Node.js专业中文社区</p>
+            <p>您可以 <a href="/login">登录</a> 或 <a href="/register">注册</a> , 也可以</p>
+            <a class="btn btn-info" href="#" role="button">通过 GitHub 登录</a>
+        </div>
+        {{ /if }}
+        {{ if load_siderbar.issuetopic }}
+        <div class="siderbar_issuetopic">
+            <a class="btn btn-success" href="/topic/create" role="button">发表话题</a>
+        </div>
+        {{ /if }}
+        {{ if load_siderbar.banner }}
+        <div class="siderbar_banner">
+            <ul class="list-group">
+                <li class="list-group-item"><a href="#">
+                        <img src="/public/images/banner_01" alt="">
+                    </a></li>
+                <li class="list-group-item"><a href="#">
+                        <img src="/public/images/banner_01" alt="">
+                    </a></li>
+                <li class="list-group-item"><a href="#">
+                        <img src="/public/images/banner_01" alt="">
+                    </a></li>
+            </ul>
+        </div>
+        {{ /if }}
+        {{ if load_siderbar.noresponse }}
+        <div class="siderbar_noresponse">
+            <div class="list-group">
+                <a href="#" class="list-group-item active">
+                    无人回复的话题
+                </a>
+                <a href="#" class="list-group-item">发现一款性能比Kong强的开源网关：Goku</a>
+                <a href="#" class="list-group-item">一种支持插件式开发的命令行工具开发模式</a>
+                <a href="#" class="list-group-item">请问缓存的内存模型是什么呢</a>
+                <a href="#" class="list-group-item">Hackers周刊第十期（2019-11-03）</a>
+                <a href="#" class="list-group-item">写了个在测试中，控制函数日志打印的npm</a>
+            </div>
+        </div>
+        {{ /if }}
+        {{ if load_siderbar.top }}
+        <div class="siderbar_top">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>积分榜</th>
+                        <th><a href="#"> TOP 100 >></a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><a href="#"> TOP 100 >></a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td><a href="#"> TOP 100 >></a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td><a href="#"> TOP 100 >></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        {{ /if }}
+        {{ if load_siderbar.community }}
+        <div class="siderbar_community">
+            <ul class="list-group">
+                <li class="list-group-item active">友情社区</li>
+                <li class="list-group-item"><a href="#">
+                        <img src="/public/images/ruby-china.png" alt="">
+                    </a></li>
+                <li class="list-group-item"><a href="#">
+                        <img src="/public/images/ruby-china.png" alt="">
+                    </a></li>
+                <li class="list-group-item"><a href="#">
+                        <img src="/public/images/ruby-china.png" alt="">
+                    </a></li>
+                <li class="list-group-item"><a href="#">
+                        <img src="/public/images/ruby-china.png" alt="">
+                    </a></li>
+            </ul>
+        </div>
+        {{ /if }}
+        {{ if load_siderbar.qrcode }}
+        <div class="siderbar_qrcode">
+            <ul class="list-group">
+                <li class="list-group-item active">客户端二维码</li>
+                <li class="list-group-item text-center"><img src="/public/images/qrcode" alt=""></li>
+                <li class="list-group-item text-center"><a href="#">客户端源码地址</a></li>
+            </ul>
+        </div>
+        {{ /if }}
+    </div>
+</div>

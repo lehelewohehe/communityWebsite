@@ -1,0 +1,20 @@
+.znode_main .znode_main_novice p {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 20px 0px;
+}
+}
+.znode_main .znode_main_novice a {
+    font-size: 16px;
+}
+.znode_main .znode_main_novice .content {
+	background-color: #fff;
+	padding: 10px; 
+}
+.bg-success {
+    background-color: #dff0d8!important;
+}
+.znode_main .znode_main_novice li {
+	border: none;
+	margin: -10px -10px 0px;
+}

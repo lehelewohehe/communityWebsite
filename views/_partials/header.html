@@ -1,0 +1,38 @@
+<!-- 页面的头部 -->
+<header class="znode_top">
+    <nav class="navbar">
+        <div class="container">
+            <!-- <div class="row"> -->
+                <div class=" znode_top_left pull-left col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                            <img alt="Brand" src="/public/images/znode_logo.svg">
+                        </a>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="znode_top_right pull-right col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="link_nav clearfix">
+                        <ul>
+                            <li class="active"><a href="/">首页 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="/novice">新手入门</a></li>
+                            <li><a href="/api">API</a></li>
+                            <li><a href="/about">关于</a></li>
+                            {{ if session }}
+                            <li><a href="/set">设置</a></li>
+                            <li><a href="/quit">退出</a></li>
+                            {{ else }}
+                            <li><a href="/register">注册</a></li>
+                            <li><a href="/login">登录</a></li>
+                            {{ /if }}
+                        </ul>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+    </nav>
+</header>
